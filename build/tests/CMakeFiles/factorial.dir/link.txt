@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/factorial.dir/test_factorial.cpp.o  -o factorial ../src/libmylibrary.a 

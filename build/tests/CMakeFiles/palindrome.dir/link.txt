@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/palindrome.dir/test_palindrome.cpp.o  -o palindrome ../src/libmylibrary.a 

@@ -2,8 +2,13 @@ FibTest 0 0
 FacTest 0 0
 PalTest 0 0
 PriTest 0 0
+factorial 0 0
+fibonacci 11 0.00019481
+palindrome 0 0
+prime 0 0
+example_class 0 0
 ---
-FibTest
-FacTest
-PalTest
-PriTest
+factorial
+palindrome
+prime
+example_class

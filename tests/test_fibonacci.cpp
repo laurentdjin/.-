@@ -1,5 +1,6 @@
 #include "fibonacci.h"
 #include <cassert>
+#include <iostream>
 
 int main() {
     assert(fibonacci(5) == 5);

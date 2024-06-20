@@ -148,56 +148,82 @@ doc_doxygen/fast:
 .PHONY : doc_doxygen/fast
 
 #=============================================================================
-# Target rules for targets named test_fac
+# Target rules for targets named mylibrary
 
 # Build rule for target.
-test_fac: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_fac
-.PHONY : test_fac
+mylibrary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mylibrary
+.PHONY : mylibrary
 
 # fast build rule for target.
-test_fac/fast:
-	$(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/build
-.PHONY : test_fac/fast
+mylibrary/fast:
+	$(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/build
+.PHONY : mylibrary/fast
 
 #=============================================================================
-# Target rules for targets named test_pri
+# Target rules for targets named fibonacci
 
 # Build rule for target.
-test_pri: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_pri
-.PHONY : test_pri
+fibonacci: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 fibonacci
+.PHONY : fibonacci
 
 # fast build rule for target.
-test_pri/fast:
-	$(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/build
-.PHONY : test_pri/fast
+fibonacci/fast:
+	$(MAKE) -f tests/CMakeFiles/fibonacci.dir/build.make tests/CMakeFiles/fibonacci.dir/build
+.PHONY : fibonacci/fast
 
 #=============================================================================
-# Target rules for targets named test_pal
+# Target rules for targets named palindrome
 
 # Build rule for target.
-test_pal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_pal
-.PHONY : test_pal
+palindrome: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 palindrome
+.PHONY : palindrome
 
 # fast build rule for target.
-test_pal/fast:
-	$(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/build
-.PHONY : test_pal/fast
+palindrome/fast:
+	$(MAKE) -f tests/CMakeFiles/palindrome.dir/build.make tests/CMakeFiles/palindrome.dir/build
+.PHONY : palindrome/fast
 
 #=============================================================================
-# Target rules for targets named test_fib
+# Target rules for targets named factorial
 
 # Build rule for target.
-test_fib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_fib
-.PHONY : test_fib
+factorial: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 factorial
+.PHONY : factorial
 
 # fast build rule for target.
-test_fib/fast:
-	$(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/build
-.PHONY : test_fib/fast
+factorial/fast:
+	$(MAKE) -f tests/CMakeFiles/factorial.dir/build.make tests/CMakeFiles/factorial.dir/build
+.PHONY : factorial/fast
+
+#=============================================================================
+# Target rules for targets named prime
+
+# Build rule for target.
+prime: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 prime
+.PHONY : prime
+
+# fast build rule for target.
+prime/fast:
+	$(MAKE) -f tests/CMakeFiles/prime.dir/build.make tests/CMakeFiles/prime.dir/build
+.PHONY : prime/fast
+
+#=============================================================================
+# Target rules for targets named example_class
+
+# Build rule for target.
+example_class: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 example_class
+.PHONY : example_class
+
+# fast build rule for target.
+example_class/fast:
+	$(MAKE) -f tests/CMakeFiles/example_class.dir/build.make tests/CMakeFiles/example_class.dir/build
+.PHONY : example_class/fast
 
 main.o: main.cpp.o
 
@@ -226,141 +252,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/example_class.o: src/example_class.cpp.o
-
-.PHONY : src/example_class.o
-
-# target to build an object file
-src/example_class.cpp.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/example_class.cpp.o
-.PHONY : src/example_class.cpp.o
-
-src/example_class.i: src/example_class.cpp.i
-
-.PHONY : src/example_class.i
-
-# target to preprocess a source file
-src/example_class.cpp.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/example_class.cpp.i
-.PHONY : src/example_class.cpp.i
-
-src/example_class.s: src/example_class.cpp.s
-
-.PHONY : src/example_class.s
-
-# target to generate assembly for a file
-src/example_class.cpp.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/example_class.cpp.s
-.PHONY : src/example_class.cpp.s
-
-src/factorial.o: src/factorial.cpp.o
-
-.PHONY : src/factorial.o
-
-# target to build an object file
-src/factorial.cpp.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/factorial.cpp.o
-.PHONY : src/factorial.cpp.o
-
-src/factorial.i: src/factorial.cpp.i
-
-.PHONY : src/factorial.i
-
-# target to preprocess a source file
-src/factorial.cpp.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/factorial.cpp.i
-.PHONY : src/factorial.cpp.i
-
-src/factorial.s: src/factorial.cpp.s
-
-.PHONY : src/factorial.s
-
-# target to generate assembly for a file
-src/factorial.cpp.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/factorial.cpp.s
-.PHONY : src/factorial.cpp.s
-
-src/fibonacci.o: src/fibonacci.cpp.o
-
-.PHONY : src/fibonacci.o
-
-# target to build an object file
-src/fibonacci.cpp.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/fibonacci.cpp.o
-.PHONY : src/fibonacci.cpp.o
-
-src/fibonacci.i: src/fibonacci.cpp.i
-
-.PHONY : src/fibonacci.i
-
-# target to preprocess a source file
-src/fibonacci.cpp.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/fibonacci.cpp.i
-.PHONY : src/fibonacci.cpp.i
-
-src/fibonacci.s: src/fibonacci.cpp.s
-
-.PHONY : src/fibonacci.s
-
-# target to generate assembly for a file
-src/fibonacci.cpp.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/fibonacci.cpp.s
-.PHONY : src/fibonacci.cpp.s
-
-src/palindrome.o: src/palindrome.cpp.o
-
-.PHONY : src/palindrome.o
-
-# target to build an object file
-src/palindrome.cpp.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/palindrome.cpp.o
-.PHONY : src/palindrome.cpp.o
-
-src/palindrome.i: src/palindrome.cpp.i
-
-.PHONY : src/palindrome.i
-
-# target to preprocess a source file
-src/palindrome.cpp.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/palindrome.cpp.i
-.PHONY : src/palindrome.cpp.i
-
-src/palindrome.s: src/palindrome.cpp.s
-
-.PHONY : src/palindrome.s
-
-# target to generate assembly for a file
-src/palindrome.cpp.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/palindrome.cpp.s
-.PHONY : src/palindrome.cpp.s
-
-src/prime.o: src/prime.cpp.o
-
-.PHONY : src/prime.o
-
-# target to build an object file
-src/prime.cpp.o:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/prime.cpp.o
-.PHONY : src/prime.cpp.o
-
-src/prime.i: src/prime.cpp.i
-
-.PHONY : src/prime.i
-
-# target to preprocess a source file
-src/prime.cpp.i:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/prime.cpp.i
-.PHONY : src/prime.cpp.i
-
-src/prime.s: src/prime.cpp.s
-
-.PHONY : src/prime.s
-
-# target to generate assembly for a file
-src/prime.cpp.s:
-	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/prime.cpp.s
-.PHONY : src/prime.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -372,28 +263,15 @@ help:
 	@echo "... MyProject"
 	@echo "... rebuild_cache"
 	@echo "... doc_doxygen"
-	@echo "... test_fac"
-	@echo "... test_pri"
-	@echo "... test_pal"
-	@echo "... test_fib"
+	@echo "... mylibrary"
+	@echo "... fibonacci"
+	@echo "... palindrome"
+	@echo "... factorial"
+	@echo "... prime"
+	@echo "... example_class"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/example_class.o"
-	@echo "... src/example_class.i"
-	@echo "... src/example_class.s"
-	@echo "... src/factorial.o"
-	@echo "... src/factorial.i"
-	@echo "... src/factorial.s"
-	@echo "... src/fibonacci.o"
-	@echo "... src/fibonacci.i"
-	@echo "... src/fibonacci.s"
-	@echo "... src/palindrome.o"
-	@echo "... src/palindrome.i"
-	@echo "... src/palindrome.s"
-	@echo "... src/prime.o"
-	@echo "... src/prime.i"
-	@echo "... src/prime.s"
 .PHONY : help
 
 

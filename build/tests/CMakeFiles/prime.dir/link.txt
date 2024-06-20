@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/prime.dir/test_prime.cpp.o  -o prime ../src/libmylibrary.a 

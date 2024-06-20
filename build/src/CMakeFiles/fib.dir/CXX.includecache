@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/laurentjin/CMAKE/ex6/.-/src/fibonacci.cpp
+fibonacci.h
+/home/laurentjin/CMAKE/ex6/.-/src/fibonacci.h
+

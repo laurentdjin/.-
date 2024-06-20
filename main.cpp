@@ -16,10 +16,12 @@
 
 int main() {
 
-    std::cout << "Le factoriel de 5 est " << factorial(5) << "." << std::endl;
-    std::cout << "Le 5ème nombre de Fibonacci est " << fibonacci(5) << "." << std::endl;
-    std::cout << "-A man, a plan, a canal, Panama - est un palindrome : " << isPalindrome("A man, a plan, a canal, Panama") << std::endl;
-    std::cout << "1 est un nombre premier : " << isPrime(1) << std::endl;
+    int num = 5;
+    std::cout << "Le factoriel de 5 est " << factorial(num) << "." << std::endl;
+    std::cout << "Le 5ème nombre de Fibonacci est " << fibonacci(num) << "." << std::endl;
+    std::string str = "A man a plan a canal Panama";
+    std::cout << "-A man, a plan, a canal, Panama - est un palindrome : " << isPalindrome(str) << std::endl;
+    std::cout << "5 est un nombre premier : " << isPrime(num) << std::endl;
 
     Example_Class obj(10);
     std::cout << "Value: " << obj.getValue() << std::endl;

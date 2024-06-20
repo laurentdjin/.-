@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmylibrary.a  CMakeFiles/mylibrary.dir/factorial.cpp.o CMakeFiles/mylibrary.dir/fibonacci.cpp.o CMakeFiles/mylibrary.dir/palindrome.cpp.o CMakeFiles/mylibrary.dir/prime.cpp.o CMakeFiles/mylibrary.dir/example_class.cpp.o
+/usr/bin/ranlib libmylibrary.a

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/fibonacci.dir/test_fibonacci.cpp.o  -o fibonacci ../src/libmylibrary.a 

@@ -56,6 +56,17 @@ CMAKE_BINARY_DIR = /home/laurentjin/CMAKE/ex6/.-/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,17 +88,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,64 +122,106 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-tests/CMakeFiles/test_fac.dir/rule:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_fac.dir/rule
-.PHONY : tests/CMakeFiles/test_fac.dir/rule
+tests/CMakeFiles/fibonacci.dir/rule:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/fibonacci.dir/rule
+.PHONY : tests/CMakeFiles/fibonacci.dir/rule
 
 # Convenience name for target.
-test_fac: tests/CMakeFiles/test_fac.dir/rule
+fibonacci: tests/CMakeFiles/fibonacci.dir/rule
 
-.PHONY : test_fac
+.PHONY : fibonacci
 
 # fast build rule for target.
-test_fac/fast:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/build
-.PHONY : test_fac/fast
+fibonacci/fast:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/fibonacci.dir/build.make tests/CMakeFiles/fibonacci.dir/build
+.PHONY : fibonacci/fast
 
 # Convenience name for target.
-tests/CMakeFiles/test_pri.dir/rule:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_pri.dir/rule
-.PHONY : tests/CMakeFiles/test_pri.dir/rule
+tests/CMakeFiles/palindrome.dir/rule:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/palindrome.dir/rule
+.PHONY : tests/CMakeFiles/palindrome.dir/rule
 
 # Convenience name for target.
-test_pri: tests/CMakeFiles/test_pri.dir/rule
+palindrome: tests/CMakeFiles/palindrome.dir/rule
 
-.PHONY : test_pri
+.PHONY : palindrome
 
 # fast build rule for target.
-test_pri/fast:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/build
-.PHONY : test_pri/fast
+palindrome/fast:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/palindrome.dir/build.make tests/CMakeFiles/palindrome.dir/build
+.PHONY : palindrome/fast
 
 # Convenience name for target.
-tests/CMakeFiles/test_pal.dir/rule:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_pal.dir/rule
-.PHONY : tests/CMakeFiles/test_pal.dir/rule
+tests/CMakeFiles/factorial.dir/rule:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/factorial.dir/rule
+.PHONY : tests/CMakeFiles/factorial.dir/rule
 
 # Convenience name for target.
-test_pal: tests/CMakeFiles/test_pal.dir/rule
+factorial: tests/CMakeFiles/factorial.dir/rule
 
-.PHONY : test_pal
+.PHONY : factorial
 
 # fast build rule for target.
-test_pal/fast:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/build
-.PHONY : test_pal/fast
+factorial/fast:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/factorial.dir/build.make tests/CMakeFiles/factorial.dir/build
+.PHONY : factorial/fast
 
 # Convenience name for target.
-tests/CMakeFiles/test_fib.dir/rule:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_fib.dir/rule
-.PHONY : tests/CMakeFiles/test_fib.dir/rule
+tests/CMakeFiles/prime.dir/rule:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/prime.dir/rule
+.PHONY : tests/CMakeFiles/prime.dir/rule
 
 # Convenience name for target.
-test_fib: tests/CMakeFiles/test_fib.dir/rule
+prime: tests/CMakeFiles/prime.dir/rule
 
-.PHONY : test_fib
+.PHONY : prime
 
 # fast build rule for target.
-test_fib/fast:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/build
-.PHONY : test_fib/fast
+prime/fast:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/prime.dir/build.make tests/CMakeFiles/prime.dir/build
+.PHONY : prime/fast
+
+# Convenience name for target.
+tests/CMakeFiles/example_class.dir/rule:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/example_class.dir/rule
+.PHONY : tests/CMakeFiles/example_class.dir/rule
+
+# Convenience name for target.
+example_class: tests/CMakeFiles/example_class.dir/rule
+
+.PHONY : example_class
+
+# fast build rule for target.
+example_class/fast:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/example_class.dir/build.make tests/CMakeFiles/example_class.dir/build
+.PHONY : example_class/fast
+
+test_example_class.o: test_example_class.cpp.o
+
+.PHONY : test_example_class.o
+
+# target to build an object file
+test_example_class.cpp.o:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/example_class.dir/build.make tests/CMakeFiles/example_class.dir/test_example_class.cpp.o
+.PHONY : test_example_class.cpp.o
+
+test_example_class.i: test_example_class.cpp.i
+
+.PHONY : test_example_class.i
+
+# target to preprocess a source file
+test_example_class.cpp.i:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/example_class.dir/build.make tests/CMakeFiles/example_class.dir/test_example_class.cpp.i
+.PHONY : test_example_class.cpp.i
+
+test_example_class.s: test_example_class.cpp.s
+
+.PHONY : test_example_class.s
+
+# target to generate assembly for a file
+test_example_class.cpp.s:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/example_class.dir/build.make tests/CMakeFiles/example_class.dir/test_example_class.cpp.s
+.PHONY : test_example_class.cpp.s
 
 test_factorial.o: test_factorial.cpp.o
 
@@ -187,7 +229,7 @@ test_factorial.o: test_factorial.cpp.o
 
 # target to build an object file
 test_factorial.cpp.o:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/test_factorial.cpp.o
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/factorial.dir/build.make tests/CMakeFiles/factorial.dir/test_factorial.cpp.o
 .PHONY : test_factorial.cpp.o
 
 test_factorial.i: test_factorial.cpp.i
@@ -196,7 +238,7 @@ test_factorial.i: test_factorial.cpp.i
 
 # target to preprocess a source file
 test_factorial.cpp.i:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/test_factorial.cpp.i
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/factorial.dir/build.make tests/CMakeFiles/factorial.dir/test_factorial.cpp.i
 .PHONY : test_factorial.cpp.i
 
 test_factorial.s: test_factorial.cpp.s
@@ -205,7 +247,7 @@ test_factorial.s: test_factorial.cpp.s
 
 # target to generate assembly for a file
 test_factorial.cpp.s:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/test_factorial.cpp.s
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/factorial.dir/build.make tests/CMakeFiles/factorial.dir/test_factorial.cpp.s
 .PHONY : test_factorial.cpp.s
 
 test_fibonacci.o: test_fibonacci.cpp.o
@@ -214,7 +256,7 @@ test_fibonacci.o: test_fibonacci.cpp.o
 
 # target to build an object file
 test_fibonacci.cpp.o:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/test_fibonacci.cpp.o
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/fibonacci.dir/build.make tests/CMakeFiles/fibonacci.dir/test_fibonacci.cpp.o
 .PHONY : test_fibonacci.cpp.o
 
 test_fibonacci.i: test_fibonacci.cpp.i
@@ -223,7 +265,7 @@ test_fibonacci.i: test_fibonacci.cpp.i
 
 # target to preprocess a source file
 test_fibonacci.cpp.i:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/test_fibonacci.cpp.i
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/fibonacci.dir/build.make tests/CMakeFiles/fibonacci.dir/test_fibonacci.cpp.i
 .PHONY : test_fibonacci.cpp.i
 
 test_fibonacci.s: test_fibonacci.cpp.s
@@ -232,7 +274,7 @@ test_fibonacci.s: test_fibonacci.cpp.s
 
 # target to generate assembly for a file
 test_fibonacci.cpp.s:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/test_fibonacci.cpp.s
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/fibonacci.dir/build.make tests/CMakeFiles/fibonacci.dir/test_fibonacci.cpp.s
 .PHONY : test_fibonacci.cpp.s
 
 test_palindrome.o: test_palindrome.cpp.o
@@ -241,7 +283,7 @@ test_palindrome.o: test_palindrome.cpp.o
 
 # target to build an object file
 test_palindrome.cpp.o:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/test_palindrome.cpp.o
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/palindrome.dir/build.make tests/CMakeFiles/palindrome.dir/test_palindrome.cpp.o
 .PHONY : test_palindrome.cpp.o
 
 test_palindrome.i: test_palindrome.cpp.i
@@ -250,7 +292,7 @@ test_palindrome.i: test_palindrome.cpp.i
 
 # target to preprocess a source file
 test_palindrome.cpp.i:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/test_palindrome.cpp.i
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/palindrome.dir/build.make tests/CMakeFiles/palindrome.dir/test_palindrome.cpp.i
 .PHONY : test_palindrome.cpp.i
 
 test_palindrome.s: test_palindrome.cpp.s
@@ -259,7 +301,7 @@ test_palindrome.s: test_palindrome.cpp.s
 
 # target to generate assembly for a file
 test_palindrome.cpp.s:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/test_palindrome.cpp.s
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/palindrome.dir/build.make tests/CMakeFiles/palindrome.dir/test_palindrome.cpp.s
 .PHONY : test_palindrome.cpp.s
 
 test_prime.o: test_prime.cpp.o
@@ -268,7 +310,7 @@ test_prime.o: test_prime.cpp.o
 
 # target to build an object file
 test_prime.cpp.o:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/test_prime.cpp.o
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/prime.dir/build.make tests/CMakeFiles/prime.dir/test_prime.cpp.o
 .PHONY : test_prime.cpp.o
 
 test_prime.i: test_prime.cpp.i
@@ -277,7 +319,7 @@ test_prime.i: test_prime.cpp.i
 
 # target to preprocess a source file
 test_prime.cpp.i:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/test_prime.cpp.i
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/prime.dir/build.make tests/CMakeFiles/prime.dir/test_prime.cpp.i
 .PHONY : test_prime.cpp.i
 
 test_prime.s: test_prime.cpp.s
@@ -286,7 +328,7 @@ test_prime.s: test_prime.cpp.s
 
 # target to generate assembly for a file
 test_prime.cpp.s:
-	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/test_prime.cpp.s
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/prime.dir/build.make tests/CMakeFiles/prime.dir/test_prime.cpp.s
 .PHONY : test_prime.cpp.s
 
 # Help Target
@@ -295,13 +337,17 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... test_fac"
-	@echo "... test_pri"
-	@echo "... test_pal"
-	@echo "... test"
-	@echo "... test_fib"
 	@echo "... edit_cache"
+	@echo "... fibonacci"
+	@echo "... rebuild_cache"
+	@echo "... palindrome"
+	@echo "... factorial"
+	@echo "... prime"
+	@echo "... example_class"
+	@echo "... test"
+	@echo "... test_example_class.o"
+	@echo "... test_example_class.i"
+	@echo "... test_example_class.s"
 	@echo "... test_factorial.o"
 	@echo "... test_factorial.i"
 	@echo "... test_factorial.s"

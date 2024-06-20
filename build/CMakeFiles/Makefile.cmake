@@ -12,6 +12,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.10.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.10.2/CMakeSystem.cmake"
+  "../src/CMakeLists.txt"
   "../tests/CMakeLists.txt"
   "/usr/share/cmake-3.10/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.10/Modules/CMakeCXXInformation.cmake"
@@ -44,6 +45,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "Doxyfile"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -51,8 +53,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MyProject.dir/DependInfo.cmake"
   "CMakeFiles/doc_doxygen.dir/DependInfo.cmake"
-  "tests/CMakeFiles/test_fac.dir/DependInfo.cmake"
-  "tests/CMakeFiles/test_pri.dir/DependInfo.cmake"
-  "tests/CMakeFiles/test_pal.dir/DependInfo.cmake"
-  "tests/CMakeFiles/test_fib.dir/DependInfo.cmake"
+  "src/CMakeFiles/mylibrary.dir/DependInfo.cmake"
+  "tests/CMakeFiles/fibonacci.dir/DependInfo.cmake"
+  "tests/CMakeFiles/palindrome.dir/DependInfo.cmake"
+  "tests/CMakeFiles/factorial.dir/DependInfo.cmake"
+  "tests/CMakeFiles/prime.dir/DependInfo.cmake"
+  "tests/CMakeFiles/example_class.dir/DependInfo.cmake"
   )

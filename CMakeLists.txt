@@ -2,12 +2,17 @@ cmake_minimum_required(VERSION 3.10)
 
 project(MyProject)
 
-add_executable(MyProject main.cpp src/factorial.cpp src/fibonacci.cpp src/palindrome.cpp src/prime.cpp src/example_class.cpp)
-target_include_directories(MyProject PRIVATE include)
+include_directories(include)
+
+#add_executable(MyProject main.cpp src/factorial.cpp src/fibonacci.cpp src/palindrome.cpp src/prime.cpp src/example_class.cpp)
+add_executable(MyProject main.cpp)
+target_link_libraries(MyProject mylibrary)
+#target_include_directories(MyProject PRIVATE include)
+
 
 # Tests
 enable_testing()
-#add_subdirectory(src)
+add_subdirectory(src)
 add_subdirectory(tests)
 
 # Doxygen

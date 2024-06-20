@@ -67,17 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -88,6 +77,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -121,6 +121,156 @@ depend:
 	cd /home/laurentjin/CMAKE/ex6/.-/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+src/CMakeFiles/mylibrary.dir/rule:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mylibrary.dir/rule
+.PHONY : src/CMakeFiles/mylibrary.dir/rule
+
+# Convenience name for target.
+mylibrary: src/CMakeFiles/mylibrary.dir/rule
+
+.PHONY : mylibrary
+
+# fast build rule for target.
+mylibrary/fast:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/build
+.PHONY : mylibrary/fast
+
+example_class.o: example_class.cpp.o
+
+.PHONY : example_class.o
+
+# target to build an object file
+example_class.cpp.o:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/example_class.cpp.o
+.PHONY : example_class.cpp.o
+
+example_class.i: example_class.cpp.i
+
+.PHONY : example_class.i
+
+# target to preprocess a source file
+example_class.cpp.i:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/example_class.cpp.i
+.PHONY : example_class.cpp.i
+
+example_class.s: example_class.cpp.s
+
+.PHONY : example_class.s
+
+# target to generate assembly for a file
+example_class.cpp.s:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/example_class.cpp.s
+.PHONY : example_class.cpp.s
+
+factorial.o: factorial.cpp.o
+
+.PHONY : factorial.o
+
+# target to build an object file
+factorial.cpp.o:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/factorial.cpp.o
+.PHONY : factorial.cpp.o
+
+factorial.i: factorial.cpp.i
+
+.PHONY : factorial.i
+
+# target to preprocess a source file
+factorial.cpp.i:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/factorial.cpp.i
+.PHONY : factorial.cpp.i
+
+factorial.s: factorial.cpp.s
+
+.PHONY : factorial.s
+
+# target to generate assembly for a file
+factorial.cpp.s:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/factorial.cpp.s
+.PHONY : factorial.cpp.s
+
+fibonacci.o: fibonacci.cpp.o
+
+.PHONY : fibonacci.o
+
+# target to build an object file
+fibonacci.cpp.o:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/fibonacci.cpp.o
+.PHONY : fibonacci.cpp.o
+
+fibonacci.i: fibonacci.cpp.i
+
+.PHONY : fibonacci.i
+
+# target to preprocess a source file
+fibonacci.cpp.i:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/fibonacci.cpp.i
+.PHONY : fibonacci.cpp.i
+
+fibonacci.s: fibonacci.cpp.s
+
+.PHONY : fibonacci.s
+
+# target to generate assembly for a file
+fibonacci.cpp.s:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/fibonacci.cpp.s
+.PHONY : fibonacci.cpp.s
+
+palindrome.o: palindrome.cpp.o
+
+.PHONY : palindrome.o
+
+# target to build an object file
+palindrome.cpp.o:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/palindrome.cpp.o
+.PHONY : palindrome.cpp.o
+
+palindrome.i: palindrome.cpp.i
+
+.PHONY : palindrome.i
+
+# target to preprocess a source file
+palindrome.cpp.i:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/palindrome.cpp.i
+.PHONY : palindrome.cpp.i
+
+palindrome.s: palindrome.cpp.s
+
+.PHONY : palindrome.s
+
+# target to generate assembly for a file
+palindrome.cpp.s:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/palindrome.cpp.s
+.PHONY : palindrome.cpp.s
+
+prime.o: prime.cpp.o
+
+.PHONY : prime.o
+
+# target to build an object file
+prime.cpp.o:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/prime.cpp.o
+.PHONY : prime.cpp.o
+
+prime.i: prime.cpp.i
+
+.PHONY : prime.i
+
+# target to preprocess a source file
+prime.cpp.i:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/prime.cpp.i
+.PHONY : prime.cpp.i
+
+prime.s: prime.cpp.s
+
+.PHONY : prime.s
+
+# target to generate assembly for a file
+prime.cpp.s:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f src/CMakeFiles/mylibrary.dir/build.make src/CMakeFiles/mylibrary.dir/prime.cpp.s
+.PHONY : prime.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -128,8 +278,24 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... edit_cache"
+	@echo "... mylibrary"
+	@echo "... test"
+	@echo "... example_class.o"
+	@echo "... example_class.i"
+	@echo "... example_class.s"
+	@echo "... factorial.o"
+	@echo "... factorial.i"
+	@echo "... factorial.s"
+	@echo "... fibonacci.o"
+	@echo "... fibonacci.i"
+	@echo "... fibonacci.s"
+	@echo "... palindrome.o"
+	@echo "... palindrome.i"
+	@echo "... palindrome.s"
+	@echo "... prime.o"
+	@echo "... prime.i"
+	@echo "... prime.s"
 .PHONY : help
 
 

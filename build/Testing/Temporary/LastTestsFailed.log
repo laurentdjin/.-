@@ -1,4 +1,4 @@
-1:FibTest
-2:FacTest
-3:PalTest
-4:PriTest
+1:factorial
+3:palindrome
+4:prime
+5:example_class

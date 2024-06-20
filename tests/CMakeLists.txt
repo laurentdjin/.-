@@ -1,18 +1,24 @@
-add_executable(test_fib test_fibonacci.cpp)
-target_link_libraries(test_fib fib)
-add_test(NAME FibTest COMMAND test_fib)
+include_directories(include)
+add_executable(factorial test_factorial.cpp)
+target_link_libraries(factorial mylibrary)
+add_test(NAME factorial COMMAND factorial)
 
-add_executable(test_fac test_factorial.cpp)
-target_link_libraries(test_fac fac)
-add_test(NAME FacTest COMMAND test_fac)
+include_directories(include)
+add_executable(fibonacci test_fibonacci.cpp)
+target_link_libraries(fibonacci mylibrary)
+add_test(NAME fibonacci COMMAND fibonacci)
 
-add_executable(test_pal test_palindrome.cpp)
-target_link_libraries(test_pal pal)
-add_test(NAME PalTest COMMAND test_pal)
+include_directories(include)
+add_executable(palindrome test_palindrome.cpp)
+target_link_libraries(palindrome mylibrary)
+add_test(NAME palindrome COMMAND palindrome)
 
-add_executable(test_pri test_prime.cpp)
-target_link_libraries(test_pri pri)
-add_test(NAME PriTest COMMAND test_pri)
+include_directories(include)
+add_executable(prime test_prime.cpp)
+target_link_libraries(prime mylibrary)
+add_test(NAME prime COMMAND prime)
 
-
-
+include_directories(include)
+add_executable(example_class test_example_class.cpp)
+target_link_libraries(example_class mylibrary)
+add_test(NAME example_class COMMAND example_class)

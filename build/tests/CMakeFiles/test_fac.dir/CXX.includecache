@@ -6,9 +6,13 @@
 
 #IncludeRegexTransform: 
 
+../include/factorial.h
+
 /home/laurentjin/CMAKE/ex6/.-/tests/test_factorial.cpp
+cassert
+-
 factorial.h
 /home/laurentjin/CMAKE/ex6/.-/tests/factorial.h
-cassert
+iostream
 -
 

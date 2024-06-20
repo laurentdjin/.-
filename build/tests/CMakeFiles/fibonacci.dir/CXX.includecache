@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/fibonacci.h
+
+/home/laurentjin/CMAKE/ex6/.-/tests/test_fibonacci.cpp
+fibonacci.h
+/home/laurentjin/CMAKE/ex6/.-/tests/fibonacci.h
+cassert
+-
+iostream
+-
+
