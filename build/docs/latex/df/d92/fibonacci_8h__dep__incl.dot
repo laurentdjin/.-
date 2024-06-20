@@ -4,5 +4,7 @@ digraph "/home/laurentjin/CMAKE/ex6/.-/include/fibonacci.h"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node1 [label="/home/laurentjin/CMAKE\l/ex6/.-/include/fibonacci.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
-  Node2 [label="/home/laurentjin/CMAKE\l/ex6/.-/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html",tooltip="Point d&#39;entrée principal du programme. "];
+  Node2 [label="/home/laurentjin/CMAKE\l/ex6/.-/src/fibonacci.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d89/fibonacci_8cpp.html",tooltip="Définition de la fonction de calcul de Fibonacci. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="/home/laurentjin/CMAKE\l/ex6/.-/main.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d0a/main_8cpp.html",tooltip="Point d&#39;entrée principal du programme. "];
 }

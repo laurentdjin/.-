@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['palindrome_2eh',['palindrome.h',['../d3/dbb/palindrome_8h.html',1,'']]],
-  ['prime_2eh',['prime.h',['../dd/d99/prime_8h.html',1,'']]]
+  ['setvalue',['setValue',['../d4/ddc/classExample__Class.html#a78b4cb3bc740ebbae7a263711efce0df',1,'Example_Class']]]
 ];

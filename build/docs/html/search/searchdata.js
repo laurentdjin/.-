@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "efgimps",
+  0: "efgmps",
   1: "e",
   2: "efmp",
-  3: "efgis"
+  3: "egs"
 };
 
 var indexSectionNames =

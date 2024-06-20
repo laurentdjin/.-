@@ -1,0 +1,34 @@
+\hypertarget{prime_8cpp}{}\section{/home/laurentjin/\+C\+M\+A\+K\+E/ex6/.-\//src/prime.cpp File Reference}
+\label{prime_8cpp}\index{/home/laurentjin/\+C\+M\+A\+K\+E/ex6/.-\//src/prime.\+cpp@{/home/laurentjin/\+C\+M\+A\+K\+E/ex6/.-\//src/prime.\+cpp}}
+
+
+Vérifie si un nombre est premier.  
+
+
+{\ttfamily \#include \char`\"{}prime.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+Include dependency graph for prime.\+cpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{prime_8cpp_a18fdc5075c8728aa6fb8a7036c9da28b}\label{prime_8cpp_a18fdc5075c8728aa6fb8a7036c9da28b}} 
+bool {\bfseries is\+Prime} (int a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vérifie si un nombre est premier. 
+
+Cette fonction utilise une méthode de vérification simple pour déterminer si un nombre est premier. Elle vérifie d\textquotesingle{}abord si le nombre est inférieur ou égal à 1 (non premier), égal à 2 (premier), ou pair (non premier). Pour les autres nombres, elle vérifie la divisibilité par des nombres impairs jusqu\textquotesingle{}à la racine carrée du nombre.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Le nombre à vérifier. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true Si le nombre est premier. 
+
+false Si le nombre n\textquotesingle{}est pas premier. 
+\end{DoxyReturn}
