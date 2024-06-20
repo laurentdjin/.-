@@ -3,8 +3,9 @@
 #include <cctype>
 
 /**
-* @brief Fonction utilitaire pour transformer une chaîne en minuscules
-*/
+ * @file palindrome.cpp
+ * @brief Fonction utilitaire pour transformer une chaîne en minuscules
+ */
 std::string toLower(const std::string& str) {
     std::string lowerStr = str;
     std::transform(lowerStr.begin(), lowerStr.end(), lowerStr.begin(),

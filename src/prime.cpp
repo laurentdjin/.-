@@ -2,6 +2,7 @@
 #include <cmath>
 
 /**
+ * file prime.cpp
  * @brief Vérifie si un nombre est premier.
  *
  * Cette fonction utilise une méthode de vérification simple pour déterminer

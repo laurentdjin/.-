@@ -2,6 +2,7 @@
 #define EXAMPLE_CLASS_H
 
 /**
+ * @file example_class.h
  * @brief A simple example class.
  *
  * This class demonstrates how to document classes with Doxygen and how to use Constructor and use get/set.

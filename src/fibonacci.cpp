@@ -1,8 +1,9 @@
 #include "fibonacci.h"
 
 /**
-* @brief Définition de la fonction de calcul de Fibonacci
-*/
+ * @file fibonacci.cpp
+ * @brief Définition de la fonction de calcul de Fibonacci
+ */
 
 int fibonacci(int n) {
     if (n < 0) {

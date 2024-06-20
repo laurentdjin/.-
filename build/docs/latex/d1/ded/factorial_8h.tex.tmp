@@ -1,5 +1,10 @@
 \hypertarget{factorial_8h}{}\section{/home/laurentjin/\+C\+M\+A\+K\+E/ex6/.-\//include/factorial.h File Reference}
 \label{factorial_8h}\index{/home/laurentjin/\+C\+M\+A\+K\+E/ex6/.-\//include/factorial.\+h@{/home/laurentjin/\+C\+M\+A\+K\+E/ex6/.-\//include/factorial.\+h}}
+
+
+Déclaration de la fonction de calcul du factoriel.  
+
+
 This graph shows which files directly or indirectly include this file\+:
 % FIG 0
 \subsection*{Functions}
@@ -11,7 +16,7 @@ int {\bfseries factorial} (int a)
 
 
 \subsection{Detailed Description}
-éclaration de la fonction de calcul du factoriel.
+Déclaration de la fonction de calcul du factoriel. 
 
 
 \begin{DoxyParams}{Parameters}

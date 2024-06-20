@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setvalue',['setValue',['../d4/ddc/classExample__Class.html#a78b4cb3bc740ebbae7a263711efce0df',1,'Example_Class']]]
+  ['getvalue',['getValue',['../d4/ddc/classExample__Class.html#a029eda159ecb5e6f2fbb39c549305019',1,'Example_Class']]]
 ];

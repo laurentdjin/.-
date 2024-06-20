@@ -4,5 +4,5 @@ digraph "/home/laurentjin/CMAKE/ex6/.-/src/factorial.cpp"
   node [fontname="Helvetica",fontsize="10",shape=record];
   Node0 [label="/home/laurentjin/CMAKE\l/ex6/.-/src/factorial.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid"];
-  Node1 [label="factorial.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/ded/factorial_8h.html"];
+  Node1 [label="factorial.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/ded/factorial_8h.html",tooltip="Déclaration de la fonction de calcul du factoriel. "];
 }
