@@ -7,4 +7,8 @@
 #IncludeRegexTransform: 
 
 /home/laurentjin/CMAKE/ex6/.-/tests/test_factorial.cpp
+factorial.h
+/home/laurentjin/CMAKE/ex6/.-/tests/factorial.h
+cassert
+-
 

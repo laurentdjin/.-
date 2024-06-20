@@ -1,4 +1,4 @@
-Start testing: Jun 20 16:01 CEST
+Start testing: Jun 20 16:38 CEST
 ----------------------------------------------------------
 Unable to find executable: /home/laurentjin/CMAKE/ex6/.-/build/tests/test_fib
 1/4 Testing: FibTest
@@ -12,7 +12,7 @@ Output:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"FibTest" end time: Jun 20 16:01 CEST
+"FibTest" end time: Jun 20 16:38 CEST
 "FibTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -28,7 +28,7 @@ Output:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"FacTest" end time: Jun 20 16:01 CEST
+"FacTest" end time: Jun 20 16:38 CEST
 "FacTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -44,7 +44,7 @@ Output:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PalTest" end time: Jun 20 16:01 CEST
+"PalTest" end time: Jun 20 16:38 CEST
 "PalTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
@@ -60,8 +60,8 @@ Output:
 Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"PriTest" end time: Jun 20 16:01 CEST
+"PriTest" end time: Jun 20 16:38 CEST
 "PriTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Jun 20 16:01 CEST
+End testing: Jun 20 16:38 CEST
