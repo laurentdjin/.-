@@ -3,7 +3,7 @@
 
 /**
  * @file factorial.h
- * @Déclaration de la fonction de calcul du factoriel.
+ * @brief Déclaration de la fonction de calcul du factoriel.
  *
  * @param a First integer.
  */

@@ -2,6 +2,7 @@
 #define PRIME_H
 
 /**
+ * @file prime.h
  * @brief Vérifie si un nombre est premier.
  *
  * Cette fonction prend un entier en entrée et retourne un booléen indiquant
@@ -15,3 +16,4 @@
 bool isPrime(int a);
 
 #endif // PRIME_H
+
