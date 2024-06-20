@@ -8,3 +8,18 @@ CMakeFiles/MyProject.dir/main.cpp.o: ../include/palindrome.h
 CMakeFiles/MyProject.dir/main.cpp.o: ../include/prime.h
 CMakeFiles/MyProject.dir/main.cpp.o: ../main.cpp
 
+CMakeFiles/MyProject.dir/src/example_class.cpp.o: ../include/example_class.h
+CMakeFiles/MyProject.dir/src/example_class.cpp.o: ../src/example_class.cpp
+
+CMakeFiles/MyProject.dir/src/factorial.cpp.o: ../include/factorial.h
+CMakeFiles/MyProject.dir/src/factorial.cpp.o: ../src/factorial.cpp
+
+CMakeFiles/MyProject.dir/src/fibonacci.cpp.o: ../include/fibonacci.h
+CMakeFiles/MyProject.dir/src/fibonacci.cpp.o: ../src/fibonacci.cpp
+
+CMakeFiles/MyProject.dir/src/palindrome.cpp.o: ../include/palindrome.h
+CMakeFiles/MyProject.dir/src/palindrome.cpp.o: ../src/palindrome.cpp
+
+CMakeFiles/MyProject.dir/src/prime.cpp.o: ../include/prime.h
+CMakeFiles/MyProject.dir/src/prime.cpp.o: ../src/prime.cpp
+

@@ -1,0 +1,20 @@
+\hypertarget{factorial_8h}{}\section{/home/laurentjin/\+C\+M\+A\+K\+E/ex6/.-\//include/factorial.h File Reference}
+\label{factorial_8h}\index{/home/laurentjin/\+C\+M\+A\+K\+E/ex6/.-\//include/factorial.\+h@{/home/laurentjin/\+C\+M\+A\+K\+E/ex6/.-\//include/factorial.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{factorial_8h_a5127a26373d94a3e3d4c46eca1e20cb7}\label{factorial_8h_a5127a26373d94a3e3d4c46eca1e20cb7}} 
+int {\bfseries factorial} (int a)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+éclaration de la fonction de calcul du factoriel.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & First integer. \\
+\hline
+\end{DoxyParams}

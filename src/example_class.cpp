@@ -8,7 +8,7 @@
 Example_Class::Example_Class(int val) : val_(val) {}
 
 int Example_Class::getValue() const {
-    return value_;
+    return val_;
 }
 
 void Example_Class::setValue(int val) {

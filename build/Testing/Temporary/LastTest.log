@@ -1,0 +1,67 @@
+Start testing: Jun 20 16:01 CEST
+----------------------------------------------------------
+Unable to find executable: /home/laurentjin/CMAKE/ex6/.-/build/tests/test_fib
+1/4 Testing: FibTest
+1/4 Test: FibTest
+Command: ""
+Directory: /home/laurentjin/CMAKE/ex6/.-/build/tests
+"FibTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FibTest" end time: Jun 20 16:01 CEST
+"FibTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/laurentjin/CMAKE/ex6/.-/build/tests/test_fac
+2/4 Testing: FacTest
+2/4 Test: FacTest
+Command: ""
+Directory: /home/laurentjin/CMAKE/ex6/.-/build/tests
+"FacTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"FacTest" end time: Jun 20 16:01 CEST
+"FacTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/laurentjin/CMAKE/ex6/.-/build/tests/test_pal
+3/4 Testing: PalTest
+3/4 Test: PalTest
+Command: ""
+Directory: /home/laurentjin/CMAKE/ex6/.-/build/tests
+"PalTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PalTest" end time: Jun 20 16:01 CEST
+"PalTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /home/laurentjin/CMAKE/ex6/.-/build/tests/test_pri
+4/4 Testing: PriTest
+4/4 Test: PriTest
+Command: ""
+Directory: /home/laurentjin/CMAKE/ex6/.-/build/tests
+"PriTest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PriTest" end time: Jun 20 16:01 CEST
+"PriTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 20 16:01 CEST

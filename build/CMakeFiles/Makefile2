@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/laurentjin/CMAKE/ex6/.-/build
 CMakeFiles/MyProject.dir/all:
 	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/depend
 	$(MAKE) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles --progress-num=1,2 "Built target MyProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target MyProject"
 .PHONY : CMakeFiles/MyProject.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/MyProject.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MyProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/MyProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles 0
 .PHONY : CMakeFiles/MyProject.dir/rule
@@ -103,7 +103,7 @@ clean: CMakeFiles/MyProject.dir/clean
 CMakeFiles/doc_doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles --progress-num=3 "Built target doc_doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles --progress-num=8 "Built target doc_doxygen"
 .PHONY : CMakeFiles/doc_doxygen.dir/all
 
 # Include target in all.
@@ -134,33 +134,21 @@ clean: CMakeFiles/doc_doxygen.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory src
-
-# Convenience name for "all" pass in the directory.
-src/all:
-
-.PHONY : src/all
-
-# Convenience name for "clean" pass in the directory.
-src/clean:
-
-.PHONY : src/clean
-
-# Convenience name for "preinstall" pass in the directory.
-src/preinstall:
-
-.PHONY : src/preinstall
-
-#=============================================================================
 # Directory level rules for directory tests
 
 # Convenience name for "all" pass in the directory.
-tests/all:
+tests/all: tests/CMakeFiles/test_fac.dir/all
+tests/all: tests/CMakeFiles/test_pri.dir/all
+tests/all: tests/CMakeFiles/test_pal.dir/all
+tests/all: tests/CMakeFiles/test_fib.dir/all
 
 .PHONY : tests/all
 
 # Convenience name for "clean" pass in the directory.
-tests/clean:
+tests/clean: tests/CMakeFiles/test_fac.dir/clean
+tests/clean: tests/CMakeFiles/test_pri.dir/clean
+tests/clean: tests/CMakeFiles/test_pal.dir/clean
+tests/clean: tests/CMakeFiles/test_fib.dir/clean
 
 .PHONY : tests/clean
 
@@ -168,6 +156,154 @@ tests/clean:
 tests/preinstall:
 
 .PHONY : tests/preinstall
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_fac.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_fac.dir/all:
+	$(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/depend
+	$(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles --progress-num=9,10 "Built target test_fac"
+.PHONY : tests/CMakeFiles/test_fac.dir/all
+
+# Include target in all.
+all: tests/CMakeFiles/test_fac.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_fac.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_fac.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_fac.dir/rule
+
+# Convenience name for target.
+test_fac: tests/CMakeFiles/test_fac.dir/rule
+
+.PHONY : test_fac
+
+# clean rule for target.
+tests/CMakeFiles/test_fac.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/clean
+.PHONY : tests/CMakeFiles/test_fac.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/test_fac.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_pri.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_pri.dir/all:
+	$(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/depend
+	$(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles --progress-num=15,16 "Built target test_pri"
+.PHONY : tests/CMakeFiles/test_pri.dir/all
+
+# Include target in all.
+all: tests/CMakeFiles/test_pri.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_pri.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_pri.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_pri.dir/rule
+
+# Convenience name for target.
+test_pri: tests/CMakeFiles/test_pri.dir/rule
+
+.PHONY : test_pri
+
+# clean rule for target.
+tests/CMakeFiles/test_pri.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/clean
+.PHONY : tests/CMakeFiles/test_pri.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/test_pri.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_pal.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_pal.dir/all:
+	$(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/depend
+	$(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles --progress-num=13,14 "Built target test_pal"
+.PHONY : tests/CMakeFiles/test_pal.dir/all
+
+# Include target in all.
+all: tests/CMakeFiles/test_pal.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_pal.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_pal.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_pal.dir/rule
+
+# Convenience name for target.
+test_pal: tests/CMakeFiles/test_pal.dir/rule
+
+.PHONY : test_pal
+
+# clean rule for target.
+tests/CMakeFiles/test_pal.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/clean
+.PHONY : tests/CMakeFiles/test_pal.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/test_pal.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target tests/CMakeFiles/test_fib.dir
+
+# All Build rule for target.
+tests/CMakeFiles/test_fib.dir/all:
+	$(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/depend
+	$(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles --progress-num=11,12 "Built target test_fib"
+.PHONY : tests/CMakeFiles/test_fib.dir/all
+
+# Include target in all.
+all: tests/CMakeFiles/test_fib.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+tests/CMakeFiles/test_fib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_fib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/laurentjin/CMAKE/ex6/.-/build/CMakeFiles 0
+.PHONY : tests/CMakeFiles/test_fib.dir/rule
+
+# Convenience name for target.
+test_fib: tests/CMakeFiles/test_fib.dir/rule
+
+.PHONY : test_fib
+
+# clean rule for target.
+tests/CMakeFiles/test_fib.dir/clean:
+	$(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/clean
+.PHONY : tests/CMakeFiles/test_fib.dir/clean
+
+# clean rule for target.
+clean: tests/CMakeFiles/test_fib.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

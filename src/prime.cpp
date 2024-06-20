@@ -2,8 +2,17 @@
 #include <cmath>
 
 /**
-*@brief Définition de la fonction de vérification de nombre premier
-*/
+ * @brief Vérifie si un nombre est premier.
+ *
+ * Cette fonction utilise une méthode de vérification simple pour déterminer
+ * si un nombre est premier. Elle vérifie d'abord si le nombre est inférieur ou égal
+ * à 1 (non premier), égal à 2 (premier), ou pair (non premier). Pour les autres nombres,
+ * elle vérifie la divisibilité par des nombres impairs jusqu'à la racine carrée du nombre.
+ *
+ * @param a Le nombre à vérifier.
+ * @return true Si le nombre est premier.
+ * @return false Si le nombre n'est pas premier.
+ */
 
 bool isPrime(int a) {
     if (a <= 1) {

@@ -121,6 +121,174 @@ depend:
 	cd /home/laurentjin/CMAKE/ex6/.-/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+tests/CMakeFiles/test_fac.dir/rule:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_fac.dir/rule
+.PHONY : tests/CMakeFiles/test_fac.dir/rule
+
+# Convenience name for target.
+test_fac: tests/CMakeFiles/test_fac.dir/rule
+
+.PHONY : test_fac
+
+# fast build rule for target.
+test_fac/fast:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/build
+.PHONY : test_fac/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_pri.dir/rule:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_pri.dir/rule
+.PHONY : tests/CMakeFiles/test_pri.dir/rule
+
+# Convenience name for target.
+test_pri: tests/CMakeFiles/test_pri.dir/rule
+
+.PHONY : test_pri
+
+# fast build rule for target.
+test_pri/fast:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/build
+.PHONY : test_pri/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_pal.dir/rule:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_pal.dir/rule
+.PHONY : tests/CMakeFiles/test_pal.dir/rule
+
+# Convenience name for target.
+test_pal: tests/CMakeFiles/test_pal.dir/rule
+
+.PHONY : test_pal
+
+# fast build rule for target.
+test_pal/fast:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/build
+.PHONY : test_pal/fast
+
+# Convenience name for target.
+tests/CMakeFiles/test_fib.dir/rule:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/test_fib.dir/rule
+.PHONY : tests/CMakeFiles/test_fib.dir/rule
+
+# Convenience name for target.
+test_fib: tests/CMakeFiles/test_fib.dir/rule
+
+.PHONY : test_fib
+
+# fast build rule for target.
+test_fib/fast:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/build
+.PHONY : test_fib/fast
+
+test_factorial.o: test_factorial.cpp.o
+
+.PHONY : test_factorial.o
+
+# target to build an object file
+test_factorial.cpp.o:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/test_factorial.cpp.o
+.PHONY : test_factorial.cpp.o
+
+test_factorial.i: test_factorial.cpp.i
+
+.PHONY : test_factorial.i
+
+# target to preprocess a source file
+test_factorial.cpp.i:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/test_factorial.cpp.i
+.PHONY : test_factorial.cpp.i
+
+test_factorial.s: test_factorial.cpp.s
+
+.PHONY : test_factorial.s
+
+# target to generate assembly for a file
+test_factorial.cpp.s:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fac.dir/build.make tests/CMakeFiles/test_fac.dir/test_factorial.cpp.s
+.PHONY : test_factorial.cpp.s
+
+test_fibonacci.o: test_fibonacci.cpp.o
+
+.PHONY : test_fibonacci.o
+
+# target to build an object file
+test_fibonacci.cpp.o:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/test_fibonacci.cpp.o
+.PHONY : test_fibonacci.cpp.o
+
+test_fibonacci.i: test_fibonacci.cpp.i
+
+.PHONY : test_fibonacci.i
+
+# target to preprocess a source file
+test_fibonacci.cpp.i:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/test_fibonacci.cpp.i
+.PHONY : test_fibonacci.cpp.i
+
+test_fibonacci.s: test_fibonacci.cpp.s
+
+.PHONY : test_fibonacci.s
+
+# target to generate assembly for a file
+test_fibonacci.cpp.s:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_fib.dir/build.make tests/CMakeFiles/test_fib.dir/test_fibonacci.cpp.s
+.PHONY : test_fibonacci.cpp.s
+
+test_palindrome.o: test_palindrome.cpp.o
+
+.PHONY : test_palindrome.o
+
+# target to build an object file
+test_palindrome.cpp.o:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/test_palindrome.cpp.o
+.PHONY : test_palindrome.cpp.o
+
+test_palindrome.i: test_palindrome.cpp.i
+
+.PHONY : test_palindrome.i
+
+# target to preprocess a source file
+test_palindrome.cpp.i:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/test_palindrome.cpp.i
+.PHONY : test_palindrome.cpp.i
+
+test_palindrome.s: test_palindrome.cpp.s
+
+.PHONY : test_palindrome.s
+
+# target to generate assembly for a file
+test_palindrome.cpp.s:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pal.dir/build.make tests/CMakeFiles/test_pal.dir/test_palindrome.cpp.s
+.PHONY : test_palindrome.cpp.s
+
+test_prime.o: test_prime.cpp.o
+
+.PHONY : test_prime.o
+
+# target to build an object file
+test_prime.cpp.o:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/test_prime.cpp.o
+.PHONY : test_prime.cpp.o
+
+test_prime.i: test_prime.cpp.i
+
+.PHONY : test_prime.i
+
+# target to preprocess a source file
+test_prime.cpp.i:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/test_prime.cpp.i
+.PHONY : test_prime.cpp.i
+
+test_prime.s: test_prime.cpp.s
+
+.PHONY : test_prime.s
+
+# target to generate assembly for a file
+test_prime.cpp.s:
+	cd /home/laurentjin/CMAKE/ex6/.-/build && $(MAKE) -f tests/CMakeFiles/test_pri.dir/build.make tests/CMakeFiles/test_pri.dir/test_prime.cpp.s
+.PHONY : test_prime.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -128,8 +296,24 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... test_fac"
+	@echo "... test_pri"
+	@echo "... test_pal"
 	@echo "... test"
+	@echo "... test_fib"
 	@echo "... edit_cache"
+	@echo "... test_factorial.o"
+	@echo "... test_factorial.i"
+	@echo "... test_factorial.s"
+	@echo "... test_fibonacci.o"
+	@echo "... test_fibonacci.i"
+	@echo "... test_fibonacci.s"
+	@echo "... test_palindrome.o"
+	@echo "... test_palindrome.i"
+	@echo "... test_palindrome.s"
+	@echo "... test_prime.o"
+	@echo "... test_prime.i"
+	@echo "... test_prime.s"
 .PHONY : help
 
 
