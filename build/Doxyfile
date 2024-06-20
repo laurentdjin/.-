@@ -1,0 +1,13 @@
+PROJECT_NAME           = "MyProject"
+OUTPUT_DIRECTORY       = /home/laurentjin/CMAKE/ex6/.-/build/docs
+INPUT                  = /home/laurentjin/CMAKE/ex6/.-/include /home/laurentjin/CMAKE/ex6/.-/src /home/laurentjin/CMAKE/ex6/.-/main.cpp
+GENERATE_HTML          = YES
+USE_MDFILE_AS_MAINPAGE = /home/laurentjin/CMAKE/ex6/.-/docs/mainpage.md
+EXTRACT_ALL = NO
+WARNINGS = YES
+WARN_LOGFILE           = /home/laurentjin/CMAKE/ex6/.-/logs/warn.logs
+WARN_IF_UNDOCUMENTED = YES
+WARN_IF_DOC_ERROR = YES
+WARN_LOGFILE =
+RECURSIVE = YES
+CREATE_SUBDIRS = YES

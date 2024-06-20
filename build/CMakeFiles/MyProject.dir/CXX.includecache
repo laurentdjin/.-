@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/example_class.h
+
+../include/factorial.h
+
+../include/fibonacci.h
+
+../include/palindrome.h
+string
+-
+
+../include/prime.h
+
+/home/laurentjin/CMAKE/ex6/.-/main.cpp
+iostream
+-
+factorial.h
+/home/laurentjin/CMAKE/ex6/.-/factorial.h
+fibonacci.h
+/home/laurentjin/CMAKE/ex6/.-/fibonacci.h
+palindrome.h
+/home/laurentjin/CMAKE/ex6/.-/palindrome.h
+prime.h
+/home/laurentjin/CMAKE/ex6/.-/prime.h
+example_class.h
+/home/laurentjin/CMAKE/ex6/.-/example_class.h
+
